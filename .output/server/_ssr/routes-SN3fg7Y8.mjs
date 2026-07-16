@@ -1,8 +1,8 @@
 import { n as __toESM } from "../_runtime.mjs";
 import { s as performance_default } from "../_libs/h3+rou3+srvx+unenv.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import "./router-D-V-NYvl.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-Bb5S2mm5.js
+import "./router-BpHPKv9Z.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-SN3fg7Y8.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Announcement() {}
@@ -15,9 +15,10 @@ function Navbar() {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 					className: "cf-logo",
 					href: "#",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "cf-logo-mark",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-face-viewfinder" })
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: "/images/logo.png",
+						alt: "CODIFACE",
+						className: "cf-logo-img"
 					}), "CODIFACE"]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
@@ -33,11 +34,15 @@ function Navbar() {
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							href: "#pricing",
-							children: "Harga"
+							children: "Paket"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: "#industries",
-							children: "Industri"
+							href: "#benefits",
+							children: "Keunggulan"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+							href: "#testimonials",
+							children: "Testimoni"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							href: "#faq",
@@ -53,15 +58,15 @@ function Navbar() {
 							href: "#",
 							children: "Masuk"
 						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							className: "cf-btn cf-btn-primary",
 							href: "#cta",
-							children: ["Pesan Demo ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-arrow-right" })]
+							children: "Coba Gratis"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 							className: "cf-nav-toggle",
 							"aria-label": "Menu",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-bars" })
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-menu" })
 						})
 					]
 				})
@@ -69,265 +74,158 @@ function Navbar() {
 		})
 	});
 }
+var HERO_CHECKS = [
+	"Absensi lebih cepat dalam 1 detik",
+	"Anti titip absen dengan AI Face Recognition",
+	"Data kehadiran real-time dan akurat",
+	"Akses mudah dari mobile & desktop"
+];
+var RATINGS = [
+	{
+		icon: "G",
+		score: "4.8",
+		label: "G2",
+		color: "#FF492C"
+	},
+	{
+		icon: "C",
+		score: "4.7",
+		label: "Capterra",
+		color: "#0052CC"
+	},
+	{
+		icon: "G",
+		score: "4.7",
+		label: "GetApp",
+		color: "#1B365F"
+	}
+];
 function Hero() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		className: "cf-hero",
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "cf-hero-bg" }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "cf-hero-grid" }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "cf-container cf-hero-inner",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "cf-hero-bg" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "cf-container cf-hero-v2",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "cf-hero-left",
 				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-						className: "cf-eyebrow cf-reveal",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-sparkles" }), " Pengenalan Wajah AI · Siap Enterprise"]
-					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
 						className: "cf-h1 cf-reveal",
 						children: [
-							"Absensi cukup dengan ",
+							"Sistem Absensi Wajah ",
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "cf-gradient-text",
-								children: "satu tatapan"
+								children: "Modern"
 							}),
-							".",
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-							"Didukung AI. Dipercaya oleh perusahaan."
+							" untuk Bisnis Anda"
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "cf-lead cf-reveal",
-						children: "CODIFACE menggantikan antrean sidik jari dan absensi manual dengan sistem pengenalan wajah berbasis cloud yang aman — akurat kurang dari satu detik, dari perangkat apa pun, di mana pun."
+						children: "CODIFACE adalah sistem absensi berbasis AI Face Recognition yang membantu perusahaan mengelola kehadiran karyawan secara akurat, real-time, dan tanpa fingerprint."
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+						className: "cf-hero-checks cf-reveal",
+						children: HERO_CHECKS.map((text) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "cf-check-icon",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-check" })
+						}), text] }, text))
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "cf-hero-ctas cf-reveal",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-							className: "cf-btn cf-btn-primary cf-btn-lg",
+							className: "cf-btn cf-btn-primary cf-btn-sm",
 							href: "#cta",
-							children: ["Pesan Demo Langsung ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-arrow-right" })]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-rocket" }), " Coba Gratis Sekarang"]
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-							className: "cf-btn cf-btn-glass cf-btn-lg",
+							className: "cf-btn cf-btn-outline cf-btn-sm",
 							href: "#how",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-circle-play" }), " Tonton Tur 2 Menit"]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-play" }), " Lihat Demo"]
 						})]
 					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "cf-hero-proof cf-reveal",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-							className: "cf-avatars",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {})
-							]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Dipercaya oleh 150+ perusahaan · Rating rata-rata 4,9/5" })]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "cf-hero-mockup cf-reveal",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "cf-mockup-frame",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "cf-mockup-inner",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "cf-mockup-top",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", {}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", {}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", {})
-										]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "cf-mockup-body",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("aside", {
-											className: "cf-mockup-side",
-											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "row active",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-chart-line" }), " Dashboard"]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "row",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-users" }), " Karyawan"]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "row",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-clock" }), " Absensi"]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "row",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-location-dot" }), " GPS"]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "row",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-calendar" }), " Cuti"]
-												}),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-													className: "row",
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-gear" }), " Pengaturan"]
-												})
-											]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
-											className: "cf-mockup-main",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "cf-mockup-cards",
-												children: [
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "cf-mockup-card",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "k",
-															children: "Hadir hari ini"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "v",
-															children: ["1.284", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "up",
-																children: "+4,2%"
-															})]
-														})]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "cf-mockup-card",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "k",
-															children: "Cuti"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "v",
-															children: ["42", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "up",
-																children: "-1,1%"
-															})]
-														})]
-													}),
-													/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "cf-mockup-card",
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "k",
-															children: "Akurasi"
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "v",
-															children: ["99,9%", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																className: "up",
-																children: "+0,1%"
-															})]
-														})]
-													})
-												]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "cf-mockup-chart",
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-													viewBox: "0 0 400 140",
-													preserveAspectRatio: "none",
-													children: [
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("defs", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("linearGradient", {
-															id: "g",
-															x1: "0",
-															x2: "0",
-															y1: "0",
-															y2: "1",
-															children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("stop", {
-																offset: "0%",
-																stopColor: "#60A5FA",
-																stopOpacity: "0.55"
-															}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("stop", {
-																offset: "100%",
-																stopColor: "#60A5FA",
-																stopOpacity: "0"
-															})]
-														}) }),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-															d: "M0,110 C40,80 80,90 120,70 S200,30 240,50 320,100 400,60 L400,140 L0,140 Z",
-															fill: "url(#g)"
-														}),
-														/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-															d: "M0,110 C40,80 80,90 120,70 S200,30 240,50 320,100 400,60",
-															stroke: "#60A5FA",
-															strokeWidth: "2",
-															fill: "none"
-														})
-													]
-												})
-											})]
-										})]
-									})]
-								})
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "cf-floating f1",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "ic",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-face-smile" })
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "txt",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "Wajah terverifikasi" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "0,42 dtk · Rina S." })]
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "cf-hero-ratings cf-reveal",
+						children: RATINGS.map((r) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "cf-rating-badge",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "cf-rating-icon",
+								style: { background: r.color },
+								children: r.icon
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "cf-rating-info",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "cf-rating-score",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxs-star" }),
+										" ",
+										r.score
+									]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "cf-rating-label",
+									children: r.label
 								})]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "cf-floating f2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "ic",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-shield-check" })
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "txt",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "Anti titip absen" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Deteksi liveness OK" })]
-								})]
-							})
-						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "cf-hero-stats cf-reveal",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "cf-hero-stat",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "< 1 dtk" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Kecepatan pengenalan" })]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "cf-hero-stat",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "99,9%" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Akurasi" })]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "cf-hero-stat",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "150+" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Perusahaan" })]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "cf-hero-stat",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "24/7" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Dukungan" })]
-							})
-						]
+							})]
+						}, r.label))
 					})
 				]
-			})
-		]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "cf-hero-right cf-reveal",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "cf-hero-image-wrap",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "cf-hero-platform" }),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: "/images/hero.png",
+							alt: "CODIFACE Dashboard & Mobile App",
+							className: "cf-hero-img"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "cf-hero-badge-check",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-check" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "Check In" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "09:00 WIB" })] })]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "cf-hero-badge-shield",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-shield-quarter" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "Aman & Akurat" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Teknologi AI untuk hasil absensi yang terpercaya" })] })]
+						})
+					]
+				})
+			})]
+		})]
 	});
 }
-var LOGOS = [
-	"Northwind",
-	"Acme Corp",
-	"Globex",
-	"Initech",
-	"Umbra",
-	"Hooli",
-	"Stark",
-	"Wayne",
-	"Vandelay",
-	"Pied Piper"
+var PARTNERS = [
+	{
+		name: "Ventria Park",
+		logo: "/partner/1.jpg"
+	},
+	{
+		name: "CodifyHub",
+		logo: "/partner/2.webp"
+	},
+	{
+		name: "Zad Restaurant",
+		logo: "/partner/1.jpg"
+	}
 ];
 function Trusted() {
-	const track = [...LOGOS, ...LOGOS];
+	const track = [
+		...PARTNERS,
+		...PARTNERS,
+		...PARTNERS
+	];
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		className: "cf-trusted",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "cf-container",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Dipercaya oleh tim modern di 15+ industri" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Dipercaya oleh perusahaan dari berbagai industri" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "cf-marquee",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "cf-marquee-track",
-					children: track.map((l, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-						className: "logo",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-bolt" }),
-							" ",
-							l
-						]
+					children: track.map((p, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+						className: "cf-partner-logo",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: p.logo,
+							alt: p.name
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: p.name })]
 					}, i))
 				})
 			})]
@@ -336,32 +234,32 @@ function Trusted() {
 }
 var PROBLEMS = [
 	{
-		i: "fa-fingerprint",
+		i: "bx-scan",
 		t: "Antrean sidik jari",
 		d: "Karyawan menghabiskan 10+ menit mengantre di mesin absen setiap pagi."
 	},
 	{
-		i: "fa-user-secret",
+		i: "bx-user",
 		t: "Titip absen",
 		d: "Absensi manual dan sidik jari mudah dicurangi — merugikan jutaan setiap bulannya."
 	},
 	{
-		i: "fa-pen-clip",
+		i: "bx-edit-alt",
 		t: "Absensi manual",
 		d: "Buku absen, spreadsheet, dan salin-tempel masih menjadi kenyataan di banyak tim HR."
 	},
 	{
-		i: "fa-file-chart-column",
+		i: "bx-bar-chart-alt-2",
 		t: "Rekap yang menyulitkan",
 		d: "Rekap akhir bulan memakan waktu berhari-hari dan sering tidak cocok dengan payroll."
 	},
 	{
-		i: "fa-clock",
+		i: "bx-time-five",
 		t: "Tak terpantau keterlambatan",
 		d: "Anda baru tahu siapa yang sering telat berminggu-minggu kemudian."
 	},
 	{
-		i: "fa-triangle-exclamation",
+		i: "bx-error",
 		t: "Rentan human error",
 		d: "Satu salah ketik di timesheet berbuntut pada salah gaji, konflik, dan hilangnya kepercayaan."
 	}
@@ -386,7 +284,8 @@ function Problem() {
 								className: "cf-gradient-text",
 								children: "merugikan bisnis"
 							}),
-							" Anda."
+							" ",
+							"Anda."
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -401,7 +300,7 @@ function Problem() {
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "ic",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `fa-regular ${p.i}` })
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `bx ${p.i}` })
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: p.t }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: p.d })
@@ -413,22 +312,22 @@ function Problem() {
 }
 var SOLUTIONS = [
 	{
-		i: "fa-face-viewfinder",
+		i: "bx-scan",
 		t: "Pengenalan Wajah AI",
 		d: "Pengenalan kurang dari satu detik dengan deteksi liveness — tanpa mesin, tanpa antre, tanpa kecurangan."
 	},
 	{
-		i: "fa-cloud",
+		i: "bx-cloud",
 		t: "Absensi Cloud",
 		d: "Setiap absensi tersinkron ke dashboard cloud secara realtime, dari lokasi mana pun."
 	},
 	{
-		i: "fa-location-dot",
+		i: "bx-map-pin",
 		t: "Validasi GPS",
 		d: "Geo-fence cabang dan lokasi kerja agar absensi hanya sah dari lokasi yang disetujui."
 	},
 	{
-		i: "fa-chart-line",
+		i: "bx-line-chart",
 		t: "Dashboard Realtime",
 		d: "Pantau siapa hadir, telat, dan cuti secara langsung — lengkap dengan analitik dan ekspor."
 	}
@@ -448,7 +347,8 @@ function Solution() {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
 						className: "cf-h2",
 						children: [
-							"Satu platform AI. Semua masalah absensi, ",
+							"Satu platform AI. Semua masalah absensi,",
+							" ",
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "cf-gradient-text",
 								children: "terselesaikan"
@@ -468,7 +368,7 @@ function Solution() {
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "ic",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `fa-regular ${s.i}` })
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `bx ${s.i}` })
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: s.t }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: s.d })
@@ -480,102 +380,102 @@ function Solution() {
 }
 var FEATURES = [
 	[
-		"fa-face-viewfinder",
+		"bx-scan",
 		"Pengenalan Wajah",
 		"Berbasis AI, kurang dari 1 detik, dengan liveness."
 	],
 	[
-		"fa-users",
+		"bx-group",
 		"Manajemen Karyawan",
 		"Profil, struktur organisasi, dokumen, kontrak."
 	],
 	[
-		"fa-clock",
+		"bx-time-five",
 		"Absensi",
 		"Check-in / check-out realtime dengan audit trail."
 	],
 	[
-		"fa-location-dot",
+		"bx-map-pin",
 		"Absensi GPS",
 		"Cabang ber-geofence dan check-in dari mobile."
 	],
 	[
-		"fa-plane-departure",
+		"bx-paper-plane",
 		"Cuti",
 		"Tahunan, sakit, tanpa gaji — dengan sisa saldo."
 	],
 	[
-		"fa-file-signature",
+		"bx-check-square",
 		"Izin",
 		"Pengajuan, approval, dan log alasan lengkap."
 	],
 	[
-		"fa-repeat",
+		"bx-repeat",
 		"Shift",
 		"Shift tetap, rotasi, dan split dengan aturan."
 	],
 	[
-		"fa-calendar",
+		"bx-calendar-event",
 		"Hari Libur",
 		"Libur regional dan perusahaan, otomatis diterapkan."
 	],
 	[
-		"fa-hourglass-half",
+		"bx-hourglass",
 		"Lembur",
 		"Perhitungan berbasis aturan dan approval."
 	],
 	[
-		"fa-chart-line",
+		"bx-line-chart",
 		"Dashboard Realtime",
 		"KPI hidup di setiap cabang dan tim."
 	],
 	[
-		"fa-chart-pie",
+		"bx-pie-chart-alt-2",
 		"Analitik",
 		"Kohort, tren, dan deteksi anomali."
 	],
 	[
-		"fa-bell",
+		"bx-bell",
 		"Notifikasi",
 		"Push, email, dan WhatsApp."
 	],
 	[
-		"fa-check-double",
+		"bx-check-double",
 		"Approval",
 		"Alur bertingkat untuk HR & manajer."
 	],
 	[
-		"fa-file-pdf",
+		"bx-file",
 		"Ekspor PDF",
 		"Laporan ber-branding, sekali klik."
 	],
 	[
-		"fa-file-excel",
+		"bx-spreadsheet",
 		"Ekspor Excel",
 		"Rekap siap payroll, selalu akurat."
 	],
 	[
-		"fa-code",
+		"bx-code-alt",
 		"REST API",
 		"Modern, versioned, dan lengkap dokumentasinya."
 	],
 	[
-		"fa-money-bill",
+		"bx-money",
 		"Siap Payroll",
 		"Sinkron langsung dengan payroll pilihan Anda."
 	],
 	[
-		"fa-user-shield",
+		"bx-shield-quarter",
 		"Role & Permission",
 		"RBAC granular hingga level field."
 	],
 	[
-		"fa-clipboard-list",
+		"bx-list-check",
 		"Audit Log",
 		"Setiap aksi tercatat dan tak bisa diubah."
 	],
 	[
-		"fa-mobile-screen",
+		"bx-mobile-alt",
 		"Ramah Mobile",
 		"Aplikasi karyawan iOS + Android."
 	]
@@ -616,7 +516,7 @@ function Features() {
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "ic",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `fa-regular ${i}` })
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `bx ${i}` })
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: t }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: d })
@@ -648,7 +548,8 @@ function HowItWorks() {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
 						className: "cf-h2",
 						children: [
-							"Dari registrasi hingga payroll dalam ",
+							"Dari registrasi hingga payroll dalam",
+							" ",
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "cf-gradient-text",
 								children: "lima langkah"
@@ -678,209 +579,90 @@ function HowItWorks() {
 	});
 }
 function Showcase() {
-	const [tab, setTab] = (0, import_react.useState)("dark");
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		className: "cf-showcase",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "cf-container",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "cf-section-head cf-reveal",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "cf-eyebrow",
-							children: "Tur Produk"
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
-							className: "cf-h2",
-							children: [
-								"Dashboard yang ",
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "cf-gradient-text",
-									children: "nyaman dipakai"
-								}),
-								" tim Anda."
-							]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "cf-lead",
-							children: "Pratinjau konsol admin dan aplikasi karyawan di desktop, tablet, dan mobile."
-						})
-					]
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "cf-showcase-tabs cf-reveal",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-							className: `cf-tab ${tab === "dark" ? "active" : ""}`,
-							onClick: () => setTab("dark"),
-							children: "Dashboard Gelap"
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-							className: `cf-tab ${tab === "light" ? "active" : ""}`,
-							onClick: () => setTab("light"),
-							children: "Dashboard Terang"
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-							className: `cf-tab ${tab === "mobile" ? "active" : ""}`,
-							onClick: () => setTab("mobile"),
-							children: "Aplikasi Karyawan"
-						})
-					]
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "cf-showcase-frame cf-reveal",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: `cf-showcase-inner ${tab === "light" ? "light" : ""}`,
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "cf-section-head cf-reveal",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: "cf-eyebrow",
+						children: "Tur Produk"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+						className: "cf-h2",
 						children: [
-							tab === "dark" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "cf-mockup-body",
-								style: {
-									position: "absolute",
-									inset: 0
-								},
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("aside", {
-									className: "cf-mockup-side",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "row active",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-chart-line" }), " Ringkasan"]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "row",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-users" }), " Karyawan"]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "row",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-clock" }), " Timesheet"]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "row",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-calendar" }), " Cuti"]
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "row",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-gear" }), " Pengaturan"]
-										})
-									]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
-									className: "cf-mockup-main",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "cf-mockup-cards",
-										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "cf-mockup-card",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "k",
-													children: "Tingkat kehadiran"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "v",
-													children: "98,4%"
-												})]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "cf-mockup-card",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "k",
-													children: "Keterlambatan"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "v",
-													children: "12"
-												})]
-											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "cf-mockup-card",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "k",
-													children: "Jam lembur"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: "v",
-													children: "318"
-												})]
-											})
-										]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "cf-mockup-chart",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-											viewBox: "0 0 400 140",
-											preserveAspectRatio: "none",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-												d: "M0,120 C60,90 120,60 180,80 S300,110 400,50 L400,140 L0,140Z",
-												fill: "rgba(96,165,250,0.35)"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-												d: "M0,120 C60,90 120,60 180,80 S300,110 400,50",
-												stroke: "#60A5FA",
-												strokeWidth: "2",
-												fill: "none"
-											})]
-										})
-									})]
-								})]
+							"Dashboard yang ",
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "cf-gradient-text",
+								children: "nyaman dipakai"
 							}),
-							tab === "light" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "placeholder",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", {
-									className: "fa-regular fa-sun",
-									style: { marginRight: 8 }
-								}), " Pratinjau tema terang"]
-							}),
-							tab === "mobile" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "placeholder",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", {
-									className: "fa-regular fa-mobile-screen",
-									style: { marginRight: 8 }
-								}), " Pratinjau aplikasi karyawan"]
-							})
+							" tim Anda."
 						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "cf-lead",
+						children: "Pratinjau konsol admin dan aplikasi karyawan di desktop, tablet, dan mobile."
 					})
-				})
-			]
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "cf-showcase-display cf-reveal",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "cf-showcase-glow" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "cf-showcase-frame",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: "/brand/1.png",
+						alt: "CODIFACE Dashboard Preview",
+						className: "cf-showcase-img"
+					})
+				})]
+			})]
 		})
 	});
 }
 var BENEFITS = [
 	[
-		"fa-bolt",
+		"bx-bolt",
 		"Absensi 1 detik",
 		"Pengenalan kurang dari 1 detik — antrean pagi hilang."
 	],
 	[
-		"fa-ban",
+		"bx-no-entry",
 		"Tanpa mesin sidik jari",
 		"Hemat biaya hardware, perawatan, dan lebih higienis."
 	],
 	[
-		"fa-shield-check",
+		"bx-check-shield",
 		"Anti titip absen",
 		"Liveness + face match menutup celah kecurangan payroll."
 	],
 	[
-		"fa-satellite-dish",
+		"bx-signal-5",
 		"Pantau realtime",
 		"Manajer bisa lihat siapa yang hadir, live, di semua cabang."
 	],
 	[
-		"fa-cloud",
+		"bx-cloud",
 		"Berbasis cloud",
 		"Tanpa server, tanpa VPN — cukup login dan pakai."
 	],
 	[
-		"fa-file-lines",
+		"bx-file",
 		"Laporan akurat",
 		"Ekspor siap payroll tanpa bersih-bersih manual."
 	],
 	[
-		"fa-brain",
+		"bx-brain",
 		"Ditenagai AI",
 		"Model yang terus berkembang, dilatih data dunia nyata."
 	],
 	[
-		"fa-face-smile",
+		"bx-smile",
 		"Mudah digunakan",
 		"UX ramah HR. Onboarding perusahaan cukup satu sore."
 	],
 	[
-		"fa-lock",
+		"bx-lock-alt",
 		"Aman sejak awal",
 		"Embedding terenkripsi, praktik SOC 2, siap regulasi EU."
 	]
@@ -917,23 +699,23 @@ function Benefits() {
 				className: "cf-benefit cf-reveal",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "ic",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `fa-regular ${i}` })
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `bx ${i}` })
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: t }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: d })] })]
 			}, t))
 		})]
 	}) });
 }
 var INDUSTRIES = [
-	["fa-hospital", "Rumah Sakit"],
-	["fa-graduation-cap", "Sekolah"],
-	["fa-building-columns", "Universitas"],
-	["fa-industry", "Pabrik"],
-	["fa-store", "Retail"],
-	["fa-hotel", "Hotel"],
-	["fa-utensils", "Restoran"],
-	["fa-building", "Kantor"],
-	["fa-landmark", "Pemerintahan"],
-	["fa-helmet-safety", "Konstruksi"]
+	["bx-clinic", "Rumah Sakit"],
+	["bx-cap", "Sekolah"],
+	["bx-building-house", "Universitas"],
+	["bx-buildings", "Pabrik"],
+	["bx-store", "Retail"],
+	["bx-building", "Hotel"],
+	["bx-food-menu", "Restoran"],
+	["bx-building", "Kantor"],
+	["bx-landmark", "Pemerintahan"],
+	["bx-hard-hat", "Konstruksi"]
 ];
 function Industries() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
@@ -970,7 +752,7 @@ function Industries() {
 					className: "cf-ind cf-reveal",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "ic",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `fa-regular ${i}` })
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: `bx ${i}` })
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: t })]
 				}, t))
 			})]
@@ -1111,7 +893,7 @@ function Pricing() {
 								]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", { children: p.features.map((f) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-circle-check" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-check-circle" }),
 								" ",
 								f
 							] }, f)) }),
@@ -1121,7 +903,7 @@ function Pricing() {
 								children: [
 									p.popular ? "Mulai Uji Coba Gratis" : "Pilih Paket",
 									" ",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-arrow-right" })
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-right-arrow-alt" })
 								]
 							})
 						]
@@ -1220,7 +1002,7 @@ function Comparison() {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", { children: "Enterprise" })
 				] }) }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("tbody", { children: COMPARE_ROWS.map((r) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("tr", { children: r.map((cell, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", {
 					className: i === 2 ? "hl" : "",
-					children: typeof cell === "boolean" ? cell ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-circle-check yes" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-minus no" }) : cell
+					children: typeof cell === "boolean" ? cell ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-check-circle yes" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-minus no" }) : cell
 				}, i)) }, r[0])) })]
 			})
 		})]
@@ -1286,11 +1068,11 @@ function Testimonials() {
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "stars",
 							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-solid fa-star" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-solid fa-star" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-solid fa-star" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-solid fa-star" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-solid fa-star" })
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxs-star" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxs-star" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxs-star" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxs-star" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxs-star" })
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
@@ -1423,7 +1205,7 @@ function FAQ() {
 				className: "cf-faq-wrap cf-reveal",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "cf-faq-search",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-magnifying-glass" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-search" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
 						value: q,
 						onChange: (e) => setQ(e.target.value),
 						placeholder: "Cari pertanyaan..."
@@ -1433,7 +1215,7 @@ function FAQ() {
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 						className: "cf-faq-q",
 						onClick: () => setOpen(open === i ? null : i),
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: t }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-plus" })]
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: t }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-plus" })]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "cf-faq-a",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -1464,12 +1246,13 @@ function FinalCTA() {
 								borderColor: "rgba(255,255,255,0.2)",
 								color: "#93C5FD"
 							},
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-sparkles" }), " Siap kapan pun Anda siap"]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-star" }), " Siap kapan pun Anda siap"]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
 							className: "cf-h2",
 							children: [
-								"Absensi modern hanya berjarak ",
+								"Absensi modern hanya berjarak",
+								" ",
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "cf-gradient-text",
 									style: { backgroundImage: "linear-gradient(120deg,#fff,#60A5FA)" },
@@ -1488,7 +1271,7 @@ function FinalCTA() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 									className: "cf-btn cf-btn-primary cf-btn-lg",
 									href: "#",
-									children: ["Pesan Demo ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-arrow-right" })]
+									children: ["Pesan Demo ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-right-arrow-alt" })]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 									className: "cf-btn cf-btn-glass cf-btn-lg",
@@ -1528,9 +1311,10 @@ function Footer() {
 								className: "cf-logo",
 								href: "#",
 								style: { color: "#fff" },
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "cf-logo-mark",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-face-viewfinder" })
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+									src: "/images/logo.png",
+									alt: "CODIFACE",
+									className: "cf-logo-img"
 								}), "CODIFACE"]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Sistem absensi pengenalan wajah AI untuk perusahaan modern dan enterprise. Dirancang dengan keamanan, kecepatan, dan kesederhanaan." }),
@@ -1644,22 +1428,22 @@ function Footer() {
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							href: "#",
 							"aria-label": "Twitter",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-brands fa-x-twitter" })
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxl-twitter" })
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							href: "#",
 							"aria-label": "LinkedIn",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-brands fa-linkedin-in" })
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxl-linkedin" })
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							href: "#",
 							"aria-label": "GitHub",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-brands fa-github" })
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxl-github" })
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							href: "#",
 							"aria-label": "YouTube",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-brands fa-youtube" })
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bxl-youtube" })
 						})
 					]
 				})]
@@ -1679,7 +1463,7 @@ function FloatingCTA() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 		className: "cf-fab",
 		href: "#cta",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "fa-regular fa-calendar-check" }), " Pesan Demo"]
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bx bx-calendar-check" }), " Pesan Demo"]
 	});
 }
 function Index() {
