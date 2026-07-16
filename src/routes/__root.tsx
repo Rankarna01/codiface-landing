@@ -77,17 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "CODIFACE — AI Face Recognition Attendance" },
+      { title: "CODIFACE — Sistem Absensi Online Face Recognition & HRIS" },
       {
         name: "description",
-        content: "Enterprise-grade AI face recognition attendance system for modern companies.",
+        content: "Tingkatkan efisiensi HR dengan CODIFACE, sistem absensi online berbasis AI Face Recognition. Pantau kehadiran akurat, anti-kecurangan (liveness detection), GPS, dan rekap payroll otomatis.",
       },
+      { name: "keywords", content: "absensi wajah, sistem absensi online, aplikasi absensi, face recognition, HRIS, software HR, absensi GPS, absensi karyawan" },
       { name: "author", content: "CODIFACE" },
       { name: "theme-color", content: "#2563EB" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.ico?v=2", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

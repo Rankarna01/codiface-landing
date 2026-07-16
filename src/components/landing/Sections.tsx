@@ -95,7 +95,7 @@ export function Problem() {
 const SOLUTIONS = [
   {
     i: "bx-scan",
-    t: "Pengenalan Wajah AI",
+    t: "Pengenalan Wajah",
     d: "Pengenalan kurang dari satu detik dengan deteksi liveness — tanpa mesin, tanpa antre, tanpa kecurangan.",
   },
   {
@@ -120,9 +120,10 @@ export function Solution() {
       <div className="cf-container">
         <div className="cf-section-head cf-reveal">
           <span className="cf-eyebrow">Solusi</span>
-          <h2 className="cf-h2">
-            Satu platform AI. Semua masalah absensi,{" "}
-            <span className="cf-gradient-text">terselesaikan</span>.
+          <h2 className="cf-h2 cf-solution-h2">
+            <span className="line-1">Satu platform AI.</span>{" "}
+            <span className="line-2">Semua masalah</span>{" "}
+            <span className="line-3">absensi, <span className="cf-gradient-text">terselesaikan</span>.</span>
           </h2>
           <p className="cf-lead">
             CODIFACE menggabungkan pengenalan wajah, GPS, dan analitik realtime dalam satu sistem
@@ -328,14 +329,14 @@ export function Benefits() {
 /* ---------- Industries ---------- */
 const INDUSTRIES: [string, string][] = [
   ["bx-clinic", "Rumah Sakit"],
-  ["bx-cap", "Sekolah"],
+  ["bx-book-open", "Sekolah"],
   ["bx-building-house", "Universitas"],
   ["bx-buildings", "Pabrik"],
   ["bx-store", "Retail"],
   ["bx-building", "Hotel"],
   ["bx-food-menu", "Restoran"],
   ["bx-building", "Kantor"],
-  ["bx-landmark", "Pemerintahan"],
+  ["bxs-bank", "Pemerintahan"],
   ["bx-hard-hat", "Konstruksi"],
 ];
 export function Industries() {
@@ -381,7 +382,7 @@ const PLANS = [
     price: { monthly: 299, yearly: 249, lifetime: 8990 },
     features: [
       "Hingga 25 karyawan",
-      "Pengenalan wajah AI",
+      "Pengenalan wajah",
       "Dashboard cloud",
       "Aplikasi mobile",
       "Dukungan email",
@@ -419,7 +420,6 @@ const PLANS = [
 ];
 const fmt = (n: number) => n.toLocaleString("id-ID");
 export function Pricing() {
-  const [cycle, setCycle] = useState<Cycle>("yearly");
   return (
     <section id="pricing">
       <div className="cf-container">
@@ -429,48 +429,45 @@ export function Pricing() {
             Harga sederhana. <span className="cf-gradient-text">Kekuatan enterprise</span>.
           </h2>
           <p className="cf-lead">
-            Coba gratis 14 hari. Tanpa kartu kredit. Bisa berhenti kapan saja.
+            Dapatkan penawaran terbaik yang paling sesuai untuk bisnis Anda
           </p>
         </div>
-        <div style={{ display: "flex", justifyContent: "center" }} className="cf-reveal">
-          <div className="cf-pricing-toggle">
-            {(["monthly", "yearly", "lifetime"] as Cycle[]).map((c) => (
-              <button key={c} className={cycle === c ? "active" : ""} onClick={() => setCycle(c)}>
-                {CYCLE_LABEL[c]}
-                {c === "yearly" && " · hemat 20%"}
-              </button>
-            ))}
-          </div>
-        </div>
+        
         <div className="cf-price-grid">
-          {PLANS.map((p) => (
-            <div key={p.name} className={`cf-plan ${p.popular ? "popular" : ""} cf-reveal`}>
-              {p.popular && <div className="cf-ribbon">Paling Populer</div>}
-              <h3>{p.name}</h3>
-              <p className="plan-desc">{p.desc}</p>
-              <div className="price">
-                Rp{fmt(p.price[cycle] * 1000)}
-                <small>
-                  {cycle === "lifetime"
-                    ? " / sekali bayar"
-                    : cycle === "yearly"
-                      ? " / bln · tagih tahunan"
-                      : " / bln"}
-                </small>
+          {PLANS.map((p) => {
+            const waText = encodeURIComponent(`Halo, saya tertarik dengan paket ${p.name} CODIFACE. Bisa minta informasi lebih lanjut?`);
+            
+            return (
+              <div key={p.name} className={`cf-plan ${p.popular ? "popular" : ""} cf-reveal`}>
+                {p.popular && <div className="cf-ribbon">Paling Populer</div>}
+                
+                <h3 style={{ fontSize: '1.75rem', marginBottom: '8px' }}>{p.name}</h3>
+                <p className="plan-desc" style={{ marginBottom: '24px' }}>{p.desc}</p>
+                
+                <a 
+                  className={`cf-btn ${p.popular ? "cf-btn-glass" : "cf-btn-primary"}`} 
+                  href={`https://wa.me/6285835116946?text=${waText}`} 
+                  target="_blank" 
+                  rel="noreferrer"
+                  style={{ width: '100%', justifyContent: 'center', marginBottom: '24px' }}
+                >
+                  <i className="bx bxl-whatsapp" style={{ fontSize: '1.25rem', marginRight: '4px' }} /> WhatsApp sales
+                </a>
+                
+                <p style={{ fontSize: '0.75rem', fontWeight: 700, opacity: 0.7, marginBottom: '16px', textTransform: 'uppercase' }}>
+                  FITUR UNGGULAN:
+                </p>
+                
+                <ul>
+                  {p.features.map((f) => (
+                    <li key={f}>
+                      <i className="bx bx-check-circle" /> {f}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul>
-                {p.features.map((f) => (
-                  <li key={f}>
-                    <i className="bx bx-check-circle" /> {f}
-                  </li>
-                ))}
-              </ul>
-              <a className={`cf-btn ${p.popular ? "cf-btn-glass" : "cf-btn-primary"}`} href="#cta">
-                {p.popular ? "Mulai Uji Coba Gratis" : "Pilih Paket"}{" "}
-                <i className="bx bx-right-arrow-alt" />
-              </a>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
@@ -480,7 +477,7 @@ export function Pricing() {
 /* ---------- Comparison ---------- */
 const COMPARE_ROWS: [string, string | boolean, string | boolean, string | boolean][] = [
   ["Karyawan", "25", "250", "Tanpa batas"],
-  ["Pengenalan Wajah AI", true, true, true],
+  ["Pengenalan Wajah", true, true, true],
   ["GPS & Geofencing", false, true, true],
   ["Shift, Cuti, Lembur", "Dasar", "Lanjutan", "Lanjutan + kustom"],
   ["REST API", false, true, true],
@@ -745,6 +742,9 @@ export function FAQ() {
 
 /* ---------- Final CTA ---------- */
 export function FinalCTA() {
+  const waDemo = encodeURIComponent("Halo CODIFACE, saya tertarik dan ingin menjadwalkan demo aplikasi.");
+  const waSales = encodeURIComponent("Halo Tim Sales CODIFACE, saya ingin berdiskusi mengenai paket dan solusi untuk perusahaan saya.");
+  
   return (
     <section id="cta" className="cf-final">
       <div className="cf-container">
@@ -775,15 +775,25 @@ export function FinalCTA() {
               bisa live dalam 48 jam.
             </p>
             <div className="cf-final-ctas">
-              <a className="cf-btn cf-btn-primary cf-btn-lg" href="#">
+              <a 
+                className="cf-btn cf-btn-primary cf-btn-lg" 
+                href={`https://wa.me/6285835116946?text=${waDemo}`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Pesan Demo <i className="bx bx-right-arrow-alt" />
               </a>
-              <a className="cf-btn cf-btn-glass cf-btn-lg" href="#">
+              <a 
+                className="cf-btn cf-btn-glass cf-btn-lg" 
+                href="#pricing"
+              >
                 Uji Coba Gratis
               </a>
               <a
                 className="cf-btn cf-btn-ghost cf-btn-lg"
-                href="#"
+                href={`https://wa.me/6285835116946?text=${waSales}`}
+                target="_blank"
+                rel="noreferrer"
                 style={{
                   background: "rgba(255,255,255,0.08)",
                   color: "#fff",

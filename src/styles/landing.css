@@ -833,7 +833,12 @@ section {
 }
 @media (max-width: 560px) {
   .cf-solution-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cf-solution-h2 .line-1,
+  .cf-solution-h2 .line-2,
+  .cf-solution-h2 .line-3 {
+    display: block;
   }
 }
 

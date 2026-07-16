@@ -17,12 +17,6 @@ export function Navbar() {
           <a href="#faq">FAQ</a>
         </nav>
         <div className="cf-nav-cta">
-          <a className="cf-btn cf-btn-ghost" href="#">
-            Masuk
-          </a>
-          <a className="cf-btn cf-btn-primary" href="#cta">
-            Coba Gratis
-          </a>
           <button className="cf-nav-toggle" aria-label="Menu">
             <i className="bx bx-menu" />
           </button>

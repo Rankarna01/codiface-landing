@@ -775,7 +775,7 @@ var PLANS = [
 		},
 		features: [
 			"Hingga 25 karyawan",
-			"Pengenalan wajah AI",
+			"Pengenalan wajah",
 			"Dashboard cloud",
 			"Aplikasi mobile",
 			"Dukungan email"
